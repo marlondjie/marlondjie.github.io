@@ -1,0 +1,1474 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>9i果冻制作厂911_创意果冻制作教程_果冻手作影像社区</title>
+<meta name="description" content="9i果冻制作厂911官方网站，专注原创果冻制作影像内容，汇聚果冻创意教程、手作幕后与同好社区，提供高清正版视频与品质内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6b3d'/%3E%3Ccircle cx='32' cy='27' r='13' fill='%23fff3e6'/%3E%3Cpath d='M32 14c3 7 8 10 14 12-6 3-11 7-14 14-3-7-8-11-14-14 6-2 11-5 14-12z' fill='%23ffb347'/%3E%3Crect x='16' y='46' width='32' height='6' rx='3' fill='%23ffffff' opacity='.85'/%3E%3C/svg%3E">
+<style>
+:root{
+  --jelly-orange:#ff6b3d;
+  --jelly-amber:#ffb347;
+  --jelly-cream:#fff8f0;
+  --jelly-deep:#3a2418;
+  --jelly-soft:#8a6b58;
+  --jelly-line:#f0dfd2;
+  --jelly-card:#ffffff;
+  --jelly-mint:#54b6a3;
+  --jelly-pink:#ff8fa3;
+  --jelly-shadow:0 10px 28px rgba(122,67,34,.10);
+  --jelly-radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--jelly-deep);
+  background:var(--jelly-cream);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.jelly-wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+.jelly-anchor{scroll-margin-top:132px}
+
+/* ===== 吸顶：公告条 + 页头 ===== */
+.jelly-sticky-stack{
+  position:sticky;top:0;z-index:120;
+}
+.jelly-announce{
+  background:linear-gradient(90deg,#3a2418,#6b3a24 55%,#a24b2a);
+  color:#ffe9d6;
+  font-size:13px;
+  letter-spacing:.2px;
+}
+.jelly-announce-inner{
+  display:flex;align-items:center;gap:12px;
+  padding:8px 0;flex-wrap:wrap;
+}
+.jelly-announce-tag{
+  flex:0 0 auto;
+  background:var(--jelly-amber);
+  color:#3a2418;
+  font-weight:700;
+  padding:1px 9px;
+  border-radius:999px;
+  font-size:12px;
+}
+.jelly-announce-text{flex:1 1 260px;min-width:0}
+.jelly-announce-text b{color:#ffd08a}
+.jelly-announce-link{
+  flex:0 0 auto;color:#ffd08a;font-weight:600;
+  border-bottom:1px dashed rgba(255,208,138,.7);
+}
+.jelly-announce-link:hover{color:#fff}
+
+.jelly-header{
+  background:rgba(255,248,240,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--jelly-line);
+}
+.jelly-header-inner{
+  display:flex;align-items:center;gap:18px;
+  padding:12px 0;
+}
+.jelly-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.jelly-brand-mark{
+  width:42px;height:42px;border-radius:13px;
+  background:linear-gradient(140deg,var(--jelly-orange),var(--jelly-amber));
+  display:grid;place-items:center;
+  color:#fff;font-weight:800;font-size:15px;letter-spacing:-.5px;
+  box-shadow:0 6px 16px rgba(255,107,61,.35);
+}
+.jelly-brand-name{font-size:19px;font-weight:800;letter-spacing:.3px;line-height:1.2}
+.jelly-brand-sub{font-size:11px;color:var(--jelly-soft);letter-spacing:2px}
+.jelly-nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.jelly-nav a{
+  padding:7px 12px;border-radius:999px;font-size:14px;color:#5c3d2b;font-weight:600;
+  transition:.2s;
+}
+.jelly-nav a:hover{background:#ffe7d4;color:var(--jelly-orange)}
+.jelly-header-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.jelly-search{
+  display:flex;align-items:center;gap:6px;
+  background:#fff;border:1px solid var(--jelly-line);
+  border-radius:999px;padding:4px 5px 4px 14px;
+  box-shadow:inset 0 1px 2px rgba(122,67,34,.05);
+}
+.jelly-search input{
+  border:0;outline:0;background:transparent;width:150px;
+  font-size:13px;color:var(--jelly-deep);
+}
+.jelly-search button{
+  border:0;background:var(--jelly-orange);color:#fff;
+  border-radius:999px;padding:6px 13px;font-size:13px;font-weight:700;
+}
+.jelly-search button:hover{background:#ee5527}
+.jelly-search-feedback{
+  display:none;font-size:12px;color:var(--jelly-soft);
+  background:#fff3e6;border:1px dashed #f5c9a6;border-radius:10px;
+  padding:6px 11px;margin-top:8px;
+}
+.jelly-search-feedback.show{display:block}
+.jelly-nav-toggle{
+  display:none;border:1px solid var(--jelly-line);background:#fff;
+  border-radius:11px;padding:7px 11px;font-size:16px;color:var(--jelly-deep);
+}
+.jelly-mobile-nav{display:none;flex-direction:column;gap:2px;padding:8px 0 14px}
+.jelly-mobile-nav.open{display:flex}
+.jelly-mobile-nav a{
+  padding:10px 14px;border-radius:11px;font-weight:600;color:#5c3d2b;
+  background:#fff;border:1px solid var(--jelly-line);
+}
+
+/* ===== 首屏：全幅主视觉背景与浮动文字 ===== */
+.jelly-hero{
+  position:relative;overflow:hidden;
+  background:#2b1a11;
+  color:#fff8f0;
+}
+.jelly-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92}
+.jelly-hero-mask{
+  position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(30,17,10,.92) 0%,rgba(45,24,13,.72) 46%,rgba(60,30,15,.28) 100%);
+}
+.jelly-hero-inner{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.86fr);
+  gap:38px;align-items:center;
+  padding:64px 20px 58px;
+  max-width:1180px;margin:0 auto;
+}
+.jelly-hero-copy{max-width:600px}
+.jelly-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,208,138,.5);
+  color:#ffd8a8;font-size:12.5px;font-weight:700;letter-spacing:.6px;
+  border-radius:999px;padding:5px 14px;margin-bottom:20px;
+}
+.jelly-hero h1{
+  font-size:clamp(30px,4.4vw,52px);
+  line-height:1.16;margin:0 0 16px;letter-spacing:.5px;
+}
+.jelly-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,#ffb347,#ff8fa3);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.jelly-hero-lead{font-size:16px;color:#f3ddc9;margin:0 0 18px;max-width:520px}
+.jelly-hero-intro{
+  font-size:14px;color:#e0c4ab;background:rgba(255,255,255,.07);
+  border-left:3px solid var(--jelly-amber);
+  padding:12px 16px;border-radius:0 12px 12px 0;margin:0 0 24px;
+}
+.jelly-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.jelly-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  border-radius:999px;padding:11px 22px;font-size:14.5px;font-weight:700;
+  border:1px solid transparent;transition:.2s;
+}
+.jelly-btn-primary{background:var(--jelly-orange);color:#fff;box-shadow:0 10px 22px rgba(255,107,61,.35)}
+.jelly-btn-primary:hover{background:#ee5527;transform:translateY(-2px)}
+.jelly-btn-ghost{background:rgba(255,255,255,.1);color:#fff8f0;border-color:rgba(255,248,240,.4)}
+.jelly-btn-ghost:hover{background:rgba(255,255,255,.2)}
+.jelly-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+  border-top:1px solid rgba(255,208,138,.28);padding-top:20px;
+}
+.jelly-hero-stat b{display:block;font-size:26px;color:#ffd08a;line-height:1.2}
+.jelly-hero-stat span{font-size:12.5px;color:#d9bda6}
+
+/* 首屏右侧浮动卡片 */
+.jelly-hero-float{position:relative;min-height:340px}
+.jelly-float-card{
+  position:relative;background:rgba(255,248,240,.97);
+  border-radius:var(--jelly-radius);padding:14px;
+  box-shadow:0 24px 48px rgba(0,0,0,.32);
+  color:var(--jelly-deep);margin-left:auto;max-width:360px;
+  transform:rotate(-1.2deg);
+}
+.jelly-float-card img{border-radius:12px;aspect-ratio:16/9;object-fit:cover;width:100%}
+.jelly-float-title{font-weight:800;font-size:15px;margin:11px 0 4px}
+.jelly-float-meta{font-size:12px;color:var(--jelly-soft)}
+.jelly-float-chip{
+  position:absolute;right:12px;top:26px;
+  background:var(--jelly-mint);color:#fff;font-size:11.5px;font-weight:700;
+  padding:3px 10px;border-radius:999px;
+}
+.jelly-float-mini{
+  position:absolute;left:0;bottom:-26px;
+  background:#3a2418;color:#ffe9d6;border:1px solid rgba(255,208,138,.4);
+  border-radius:14px;padding:9px 14px;font-size:12.5px;font-weight:600;
+  box-shadow:0 14px 30px rgba(0,0,0,.3);
+}
+
+/* ===== 通用 section ===== */
+.jelly-section{padding:58px 0}
+.jelly-section-alt{background:#fff;border-top:1px solid var(--jelly-line);border-bottom:1px solid var(--jelly-line)}
+.jelly-section-head{margin-bottom:30px;max-width:760px}
+.jelly-eyebrow{
+  display:inline-block;font-size:12.5px;font-weight:800;letter-spacing:2.4px;
+  color:var(--jelly-orange);text-transform:uppercase;margin-bottom:9px;
+}
+.jelly-eyebrow::before{content:"◆ ";font-size:9px;vertical-align:2px}
+.jelly-h2{
+  font-size:clamp(23px,2.7vw,32px);line-height:1.26;margin:0 0 12px;
+  letter-spacing:.3px;
+}
+.jelly-h2 .jelly-hl{color:var(--jelly-orange)}
+.jelly-section-desc{margin:0;color:#6d4c38;font-size:14.5px}
+
+/* ===== 关键词深度解析 ===== */
+.jelly-parse{
+  display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);
+  gap:34px;align-items:start;
+}
+.jelly-parse-main p{font-size:15px;color:#4c3425;margin:0 0 15px}
+.jelly-parse-main h3{
+  font-size:17.5px;margin:26px 0 8px;color:var(--jelly-deep);
+  border-left:4px solid var(--jelly-orange);padding-left:11px;line-height:1.4;
+}
+.jelly-parse-main h3:first-child{margin-top:0}
+.jelly-parse-side{position:sticky;top:150px;display:flex;flex-direction:column;gap:16px}
+.jelly-side-card{
+  background:#fff;border:1px solid var(--jelly-line);border-radius:var(--jelly-radius);
+  padding:18px;box-shadow:var(--jelly-shadow);
+}
+.jelly-side-card h3{font-size:15px;margin:0 0 12px}
+.jelly-side-card img{border-radius:12px;aspect-ratio:4/3;object-fit:cover;width:100%;margin-bottom:10px}
+.jelly-side-card p{font-size:13px;color:#71503b;margin:0 0 6px}
+.jelly-side-fact{
+  display:flex;justify-content:space-between;font-size:13px;
+  border-bottom:1px dashed var(--jelly-line);padding:7px 0;
+}
+.jelly-side-fact:last-child{border-bottom:0}
+.jelly-side-fact b{color:var(--jelly-orange)}
+
+/* ===== 焦点内容 ===== */
+.jelly-focus-grid{
+  display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);
+  gap:26px;
+}
+.jelly-focus-main{
+  background:#fff;border:1px solid var(--jelly-line);border-radius:var(--jelly-radius);
+  overflow:hidden;box-shadow:var(--jelly-shadow);transition:.25s;
+  display:flex;flex-direction:column;
+}
+.jelly-focus-main:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(122,67,34,.16)}
+.jelly-focus-cover{position:relative}
+.jelly-focus-cover img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.jelly-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:56px;height:56px;border-radius:50%;
+  background:rgba(255,248,240,.92);display:grid;place-items:center;
+  font-size:20px;color:var(--jelly-orange);border:0;
+  box-shadow:0 8px 20px rgba(0,0,0,.25);transition:.2s;
+}
+.jelly-play:hover{background:var(--jelly-orange);color:#fff;transform:translate(-50%,-50%) scale(1.08)}
+.jelly-focus-body{padding:18px 20px 20px}
+.jelly-focus-body h3{font-size:19px;margin:0 0 8px;line-height:1.38}
+.jelly-focus-body p{margin:0 0 12px;font-size:14px;color:#6a4a36}
+.jelly-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:13px}
+.jelly-tag{
+  font-size:11.5px;font-weight:700;color:#a24b2a;background:#ffe7d4;
+  border-radius:999px;padding:2px 10px;
+}
+.jelly-tag.jelly-tag-mint{background:#d9f2ec;color:#2c7a68}
+.jelly-tag.jelly-tag-pink{background:#ffe1e6;color:#c2415a}
+.jelly-meta-row{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  font-size:12.5px;color:var(--jelly-soft);border-top:1px dashed var(--jelly-line);
+  padding-top:12px;
+}
+.jelly-op{
+  display:inline-flex;align-items:center;gap:4px;border:0;background:transparent;
+  font-size:12.5px;color:var(--jelly-soft);padding:2px 0;transition:.15s;
+}
+.jelly-op:hover{color:var(--jelly-orange)}
+.jelly-op.jelly-op-on{color:var(--jelly-orange);font-weight:700}
+.jelly-focus-list{display:flex;flex-direction:column;gap:14px}
+.jelly-focus-item{
+  display:grid;grid-template-columns:96px minmax(0,1fr);gap:13px;
+  background:#fff;border:1px solid var(--jelly-line);border-radius:14px;
+  padding:11px;transition:.2s;
+}
+.jelly-focus-item:hover{border-color:#f5c9a6;transform:translateX(3px)}
+.jelly-focus-item img{
+  width:96px;height:72px;object-fit:cover;border-radius:10px;
+}
+.jelly-focus-item h3{font-size:14.5px;margin:0 0 5px;line-height:1.4}
+.jelly-focus-item p{font-size:12.5px;color:#7a5946;margin:0 0 6px}
+.jelly-focus-item .jelly-meta-row{border:0;padding-top:0;gap:10px;font-size:11.5px}
+
+/* ===== 热门视频流单列图文列表 ===== */
+.jelly-video-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--jelly-line)}
+.jelly-video-row{
+  display:grid;grid-template-columns:64px minmax(0,1fr) auto;
+  gap:18px;align-items:center;
+  padding:20px 6px;border-bottom:1px solid var(--jelly-line);
+  transition:.2s;
+}
+.jelly-video-row:hover{background:#fffaf4}
+.jelly-video-rank{
+  font-size:26px;font-weight:800;color:#f0d5c2;text-align:center;
+  letter-spacing:-2px;line-height:1;
+}
+.jelly-video-row:nth-child(1) .jelly-video-rank{color:var(--jelly-orange)}
+.jelly-video-row:nth-child(2) .jelly-video-rank{color:var(--jelly-amber)}
+.jelly-video-row:nth-child(3) .jelly-video-rank{color:var(--jelly-mint)}
+.jelly-video-main h3{font-size:16.5px;margin:0 0 5px;line-height:1.4}
+.jelly-video-main p{margin:0 0 8px;font-size:13.5px;color:#6d4c38}
+.jelly-video-main .jelly-meta-row{border:0;padding-top:0;gap:13px}
+.jelly-video-tools{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+.jelly-video-thumb{display:none}
+.jelly-video-thumb img{width:150px;aspect-ratio:16/9;object-fit:cover;border-radius:10px}
+
+/* ===== 专题企划 ===== */
+.jelly-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.jelly-topic{
+  background:#fff;border:1px solid var(--jelly-line);border-radius:var(--jelly-radius);
+  padding:20px;display:flex;flex-direction:column;box-shadow:var(--jelly-shadow);
+}
+.jelly-topic-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.jelly-topic-status{font-size:11.5px;font-weight:800;border-radius:999px;padding:2px 10px}
+.jelly-st-ongoing{background:#ffe7d4;color:#a24b2a}
+.jelly-st-done{background:#d9f2ec;color:#2c7a68}
+.jelly-st-soon{background:#ffe1e6;color:#c2415a}
+.jelly-topic h3{font-size:17px;margin:0 0 8px;line-height:1.4}
+.jelly-topic>p{font-size:13.5px;color:#6d4c38;margin:0 0 14px}
+.jelly-topic ul{list-style:none;margin:0 0 14px;padding:0;display:flex;flex-direction:column;gap:8px}
+.jelly-topic li{
+  font-size:13px;color:#4c3425;padding-left:16px;position:relative;line-height:1.5;
+}
+.jelly-topic li::before{
+  content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:2px;
+  background:var(--jelly-amber);
+}
+.jelly-topic img{
+  width:100%;aspect-ratio:2/1;object-fit:cover;border-radius:12px;margin-bottom:13px;
+}
+.jelly-topic-foot{margin-top:auto;font-size:12.5px;color:var(--jelly-soft)}
+
+/* ===== 创作者访谈摘录式作者区 ===== */
+.jelly-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.jelly-author{
+  display:grid;grid-template-columns:76px minmax(0,1fr);gap:16px;
+  background:#fff;border:1px solid var(--jelly-line);border-radius:var(--jelly-radius);
+  padding:20px;box-shadow:var(--jelly-shadow);
+}
+.jelly-avatar{
+  width:76px;height:76px;border-radius:20px;display:grid;place-items:center;
+  font-size:26px;font-weight:800;color:#fff;
+}
+.jelly-av-1{background:linear-gradient(140deg,#ff6b3d,#ffb347)}
+.jelly-av-2{background:linear-gradient(140deg,#54b6a3,#8fd9c6)}
+.jelly-av-3{background:linear-gradient(140deg,#ff8fa3,#ffc2cd)}
+.jelly-av-4{background:linear-gradient(140deg,#8a6b58,#c2a48f)}
+.jelly-av-5{background:linear-gradient(140deg,#6b8cff,#a8c0ff)}
+.jelly-av-6{background:linear-gradient(140deg,#e0a73d,#f3d18b)}
+.jelly-author h3{font-size:16px;margin:0 0 3px}
+.jelly-author-role{font-size:12px;color:var(--jelly-orange);font-weight:700;margin-bottom:7px}
+.jelly-author-stat{font-size:12px;color:var(--jelly-soft);margin-bottom:8px}
+.jelly-author p{font-size:13px;color:#6d4c38;margin:0 0 10px}
+.jelly-author-quote{
+  font-size:13px;color:#8a6b58;border-left:3px solid var(--jelly-pink);
+  padding-left:10px;font-style:italic;margin:0;
+}
+
+/* ===== 双列短评 ===== */
+.jelly-comment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.jelly-comment{
+  background:#fff;border:1px solid var(--jelly-line);border-radius:15px;padding:17px 18px;
+  display:flex;flex-direction:column;gap:9px;
+}
+.jelly-comment-head{display:flex;align-items:center;gap:10px}
+.jelly-comment-av{
+  width:36px;height:36px;border-radius:50%;display:grid;place-items:center;
+  font-size:14px;font-weight:800;color:#fff;
+}
+.jelly-comment-name{font-size:13.5px;font-weight:700}
+.jelly-comment-time{font-size:11.5px;color:#a98c79;margin-left:auto}
+.jelly-stars{color:var(--jelly-amber);font-size:13px;letter-spacing:1px}
+.jelly-comment p{font-size:13.5px;color:#4c3425;margin:0}
+.jelly-comment-tag{
+  font-size:11.5px;color:var(--jelly-mint);background:#e5f6f1;border-radius:999px;
+  padding:2px 10px;align-self:flex-start;
+}
+
+/* ===== 企业动态 / FAQ / 合作 ===== */
+.jelly-two-col{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:34px;align-items:start}
+.jelly-news{display:flex;flex-direction:column}
+.jelly-news-item{
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;
+  padding:14px 0;border-bottom:1px dashed var(--jelly-line);
+}
+.jelly-news-date{
+  font-size:12px;font-weight:800;color:var(--jelly-orange);
+  background:#fff3e6;border-radius:9px;padding:5px 9px;height:fit-content;white-space:nowrap;
+}
+.jelly-news-item h3{font-size:15px;margin:0 0 4px;line-height:1.4}
+.jelly-news-item p{font-size:13px;color:#6d4c38;margin:0}
+
+.jelly-faq details{
+  background:#fff;border:1px solid var(--jelly-line);border-radius:13px;
+  padding:0;margin-bottom:10px;overflow:hidden;
+}
+.jelly-faq summary{
+  cursor:pointer;padding:14px 46px 14px 17px;font-weight:700;font-size:14.5px;
+  position:relative;list-style:none;
+}
+.jelly-faq summary::-webkit-details-marker{display:none}
+.jelly-faq summary::after{
+  content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);
+  font-size:19px;color:var(--jelly-orange);font-weight:700;
+}
+.jelly-faq details[open] summary::after{content:"−"}
+.jelly-faq details p{
+  margin:0;padding:0 17px 15px;font-size:13.5px;color:#6d4c38;
+  border-top:1px dashed var(--jelly-line);padding-top:12px;
+}
+
+.jelly-partner-row{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:26px;
+}
+.jelly-partner{
+  background:#fff;border:1px solid var(--jelly-line);border-radius:13px;
+  padding:16px 12px;text-align:center;font-size:13px;font-weight:700;color:#8a6b58;
+  transition:.2s;
+}
+.jelly-partner:hover{border-color:#f5c9a6;color:var(--jelly-orange);transform:translateY(-2px)}
+.jelly-partner span{display:block;font-size:11px;font-weight:500;color:#b39a88;margin-top:3px}
+
+/* ===== 投稿条 ===== */
+.jelly-cta{
+  background:linear-gradient(120deg,#3a2418,#7a3a20 60%,#b05a2f);
+  color:#ffe9d6;border-radius:22px;padding:34px 32px;
+  display:grid;grid-template-columns:minmax(0,1.4fr) auto;gap:24px;align-items:center;
+}
+.jelly-cta h2{font-size:clamp(21px,2.5vw,28px);margin:0 0 9px}
+.jelly-cta p{margin:0;font-size:14px;color:#f0d3ba}
+.jelly-cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ===== 页脚 ===== */
+.jelly-footer{background:#2b1a11;color:#d9bda6;padding:50px 0 26px;margin-top:20px}
+.jelly-footer-grid{
+  display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));
+  gap:30px;padding-bottom:30px;border-bottom:1px solid rgba(255,208,138,.18);
+}
+.jelly-footer h3{font-size:14px;color:#ffd08a;margin:0 0 12px;letter-spacing:.5px}
+.jelly-footer p{font-size:13px;margin:0 0 7px;line-height:1.75}
+.jelly-footer a{font-size:13px;color:#d9bda6;display:block;margin-bottom:7px}
+.jelly-footer a:hover{color:#ffd08a}
+.jelly-footer-brand{font-size:19px;font-weight:800;color:#fff8f0;margin-bottom:9px}
+.jelly-footer-bottom{
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  padding-top:20px;font-size:12.5px;color:#a98c79;
+}
+
+/* ===== 弹窗 / Toast / 回顶 ===== */
+.jelly-modal-backdrop{
+  position:fixed;inset:0;background:rgba(43,26,17,.55);z-index:300;
+  display:none;align-items:center;justify-content:center;padding:20px;
+}
+.jelly-modal-backdrop.show{display:flex}
+.jelly-modal{
+  background:var(--jelly-cream);border-radius:20px;max-width:520px;width:100%;
+  padding:26px;box-shadow:0 30px 70px rgba(0,0,0,.4);max-height:86vh;overflow:auto;
+}
+.jelly-modal h3{font-size:19px;margin:0 0 8px}
+.jelly-modal p{font-size:13.5px;color:#6d4c38;margin:0 0 16px}
+.jelly-modal label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+.jelly-modal input,.jelly-modal textarea{
+  width:100%;border:1px solid var(--jelly-line);border-radius:11px;
+  padding:10px 12px;font-family:inherit;font-size:13.5px;margin-bottom:14px;
+  background:#fff;color:var(--jelly-deep);outline:0;
+}
+.jelly-modal input:focus,.jelly-modal textarea:focus{border-color:var(--jelly-orange)}
+.jelly-modal-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+.jelly-btn-plain{background:#fff;border:1px solid var(--jelly-line);color:#5c3d2b}
+.jelly-btn-plain:hover{background:#f5e9df}
+
+.jelly-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#3a2418;color:#ffe9d6;padding:11px 20px;border-radius:999px;
+  font-size:13.5px;font-weight:600;z-index:400;opacity:0;pointer-events:none;
+  transition:.28s;box-shadow:0 14px 30px rgba(0,0,0,.3);
+}
+.jelly-toast.show{opacity:1;transform:translate(-50%,0)}
+
+.jelly-backtop{
+  position:fixed;right:20px;bottom:24px;width:46px;height:46px;border-radius:50%;
+  border:0;background:var(--jelly-orange);color:#fff;font-size:19px;
+  box-shadow:0 10px 24px rgba(255,107,61,.4);z-index:200;
+  opacity:0;pointer-events:none;transition:.25s;
+}
+.jelly-backtop.show{opacity:1;pointer-events:auto}
+.jelly-backtop:hover{background:#ee5527}
+
+/* ===== 响应式 ===== */
+@media (max-width:980px){
+  .jelly-hero-inner{grid-template-columns:minmax(0,1fr);padding-top:46px;padding-bottom:44px}
+  .jelly-hero-float{min-height:0;margin-top:6px}
+  .jelly-float-card{margin-left:0;max-width:100%;transform:none}
+  .jelly-float-mini{position:static;display:inline-block;margin-top:12px;left:auto;bottom:auto}
+  .jelly-parse{grid-template-columns:minmax(0,1fr)}
+  .jelly-parse-side{position:static}
+  .jelly-focus-grid{grid-template-columns:minmax(0,1fr)}
+  .jelly-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jelly-two-col{grid-template-columns:minmax(0,1fr)}
+  .jelly-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jelly-partner-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jelly-cta{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:760px){
+  .jelly-nav{display:none}
+  .jelly-nav-toggle{display:block}
+  .jelly-header-tools .jelly-search{display:none}
+  .jelly-header-inner{gap:10px}
+  .jelly-author-grid{grid-template-columns:minmax(0,1fr)}
+  .jelly-comment-grid{grid-template-columns:minmax(0,1fr)}
+  .jelly-topic-grid{grid-template-columns:minmax(0,1fr)}
+  .jelly-video-row{grid-template-columns:46px minmax(0,1fr);gap:12px}
+  .jelly-video-tools{grid-column:1 / -1;flex-direction:row;align-items:center;justify-content:flex-start}
+  .jelly-video-rank{font-size:20px}
+  .jelly-hero-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .jelly-hero-stat b{font-size:20px}
+  .jelly-section{padding:42px 0}
+  .jelly-announce-inner{padding:7px 0;gap:8px}
+  .jelly-announce-text{font-size:12px}
+  .jelly-footer-grid{grid-template-columns:minmax(0,1fr)}
+  .jelly-cta{padding:26px 20px}
+  .jelly-author{grid-template-columns:60px minmax(0,1fr);padding:16px}
+  .jelly-avatar{width:60px;height:60px;border-radius:16px;font-size:21px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头（共同吸顶） -->
+<div class="jelly-sticky-stack">
+  <div class="jelly-announce">
+    <div class="jelly-wrap jelly-announce-inner">
+      <span class="jelly-announce-tag">官方发布</span>
+      <span class="jelly-announce-text">「果冻实验室·冬季限定」第 14 期上线：<b>双色云朵果冻</b>全流程拆解，同步开启「冬日果冻创意挑战」报名。</span>
+      <a class="jelly-announce-link" href="#jelly-topics">查看企划</a>
+    </div>
+  </div>
+  <header class="jelly-header">
+    <div class="jelly-wrap jelly-header-inner">
+      <a class="jelly-brand" href="#jelly-hero">
+        <span class="jelly-brand-mark">9i</span>
+        <span>
+          <span class="jelly-brand-name">9i果冻制作厂911</span>
+          <span class="jelly-brand-sub">JELLY STUDIO</span>
+        </span>
+      </a>
+      <nav class="jelly-nav" aria-label="主导航">
+        <a href="#jelly-focus">焦点内容</a>
+        <a href="#jelly-videos">热门视频</a>
+        <a href="#jelly-topics">专题企划</a>
+        <a href="#jelly-authors">创作者</a>
+        <a href="#jelly-comments">社区口碑</a>
+        <a href="#jelly-faq">帮助中心</a>
+      </nav>
+      <div class="jelly-header-tools">
+        <div class="jelly-search">
+          <input id="jellySearchInput" type="search" placeholder="搜索果冻教程 / 创作者" aria-label="站内搜索">
+          <button id="jellySearchBtn" type="button">搜索</button>
+        </div>
+        <button class="jelly-nav-toggle" id="jellyNavToggle" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="jelly-wrap">
+      <div class="jelly-search-feedback" id="jellySearchFeedback"></div>
+      <nav class="jelly-mobile-nav" id="jellyMobileNav" aria-label="移动端导航">
+        <a href="#jelly-parse">关键词解析</a>
+        <a href="#jelly-focus">焦点内容</a>
+        <a href="#jelly-videos">热门视频</a>
+        <a href="#jelly-topics">专题企划</a>
+        <a href="#jelly-authors">创作者</a>
+        <a href="#jelly-comments">社区口碑</a>
+        <a href="#jelly-news">企业动态</a>
+        <a href="#jelly-faq">帮助中心</a>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<!-- S2 品牌首屏 -->
+<section class="jelly-hero" id="jelly-hero">
+  <svg class="jelly-hero-bg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="9i果冻制作厂911官网首屏主视觉：暖橙色背景中的多层果冻切面与器皿">
+    <defs>
+      <linearGradient id="jellyHeroA" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#ff6b3d"/>
+      </linearGradient>
+      <linearGradient id="jellyHeroB" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#ff8fa3"/><stop offset="1" stop-color="#ffd08a"/>
+      </linearGradient>
+      <radialGradient id="jellyHeroGlow" cx=".7" cy=".3" r=".7">
+        <stop offset="0" stop-color="#ffd08a" stop-opacity=".55"/><stop offset="1" stop-color="#ff6b3d" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="1600" height="900" fill="#2b1a11"/>
+    <circle cx="1180" cy="240" r="420" fill="url(#jellyHeroGlow)"/>
+    <g opacity=".9">
+      <path d="M980 620 L1180 420 L1380 620 L1180 820 Z" fill="#ff8fa3" opacity=".5"/>
+      <path d="M1020 600 L1180 440 L1340 600 L1180 760 Z" fill="#ffb347" opacity=".65"/>
+      <path d="M1060 580 L1180 460 L1300 580 L1180 700 Z" fill="#fff3e6" opacity=".8"/>
+    </g>
+    <g opacity=".55">
+      <rect x="240" y="560" width="230" height="230" rx="26" fill="url(#jellyHeroA)" transform="rotate(-9 355 675)"/>
+      <rect x="470" y="620" width="150" height="150" rx="22" fill="url(#jellyHeroB)" transform="rotate(12 545 695)"/>
+      <circle cx="760" cy="300" r="120" fill="#ffb347" opacity=".35"/>
+      <circle cx="760" cy="300" r="74" fill="#fff3e6" opacity=".45"/>
+    </g>
+    <g stroke="#ffd08a" stroke-opacity=".28" stroke-width="2" fill="none">
+      <path d="M80 200 q180 -90 360 0 t360 0"/>
+      <path d="M120 760 q200 80 400 0 t400 0"/>
+    </g>
+  </svg>
+  <div class="jelly-hero-mask"></div>
+  <div class="jelly-hero-inner">
+    <div class="jelly-hero-copy">
+      <span class="jelly-hero-badge">官方网站 · 果冻手作影像平台</span>
+      <h1>9i果冻制作厂911 <em>官方视频门户</em></h1>
+      <p class="jelly-hero-lead">把一锅糖水，做成值得反复观看的画面。</p>
+      <p class="jelly-hero-intro">作为国内深耕果冻手作领域的品牌，9i果冻制作厂911 官方网站致力于为创作者与果冻爱好者搭建高品质内容生态：原创教程、深度测评、创作幕后与社区同好，都在这里被认真记录。</p>
+      <div class="jelly-hero-actions">
+        <a class="jelly-btn jelly-btn-primary" href="#jelly-videos">▶ 观看热门视频</a>
+        <a class="jelly-btn jelly-btn-ghost" href="#jelly-topics">进入专题企划</a>
+        <button class="jelly-btn jelly-btn-ghost" type="button" id="jellyHeroSubmit">提交你的作品</button>
+      </div>
+      <div class="jelly-hero-stats">
+        <div class="jelly-hero-stat"><b>1,286</b><span>原创果冻视频</span></div>
+        <div class="jelly-hero-stat"><b>36.4万</b><span>社区注册创作者</span></div>
+        <div class="jelly-hero-stat"><b>5,700万</b><span>累计高清播放</span></div>
+      </div>
+    </div>
+    <div class="jelly-hero-float">
+      <div class="jelly-float-card">
+        <span class="jelly-float-chip">本期精选</span>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffb347'/%3E%3Cstop offset='1' stop-color='%23ff6b3d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='%23fff3e6'/%3E%3Crect x='60' y='210' width='520' height='90' rx='16' fill='%23f0dfd2'/%3E%3Cpath d='M120 210 L180 80 L240 210 Z' fill='url(%23g1)' opacity='.85'/%3E%3Cpath d='M230 210 L300 60 L370 210 Z' fill='%23ff8fa3' opacity='.8'/%3E%3Cpath d='M350 210 L420 96 L490 210 Z' fill='%2354b6a3' opacity='.75'/%3E%3Ccircle cx='500' cy='250' r='26' fill='%23ffd08a'/%3E%3Ccircle cx='150' cy='150' r='18' fill='%23fff' opacity='.7'/%3E%3Ccircle cx='560' cy='120' r='12' fill='%23ff6b3d' opacity='.5'/%3E%3C/svg%3E" alt="双色云朵果冻成品摆盘封面，三层渐变果冻切面与米白器皿">
+        <div class="jelly-float-title">双色云朵果冻：零失败分层公式</div>
+        <div class="jelly-float-meta">作者 林小满 · 8.9 万播放 · 4,120 收藏</div>
+      </div>
+      <div class="jelly-float-mini">今日新增 27 条投稿 · 官方原创审核中</div>
+    </div>
+  </div>
+</section>
+
+<!-- 关键词解析（800 字以上） -->
+<section class="jelly-section jelly-anchor" id="jelly-parse">
+  <div class="jelly-wrap">
+    <div class="jelly-section-head">
+      <span class="jelly-eyebrow">Keyword Insight</span>
+      <h2 class="jelly-h2">关于「9i果冻制作厂911」的<span class="jelly-hl">关键词深度解析</span></h2>
+      <p class="jelly-section-desc">一个看起来像厂牌名的词，为什么能成为果冻手作社区的入口？我们从品牌、内容与社区三个层面拆开讲。</p>
+    </div>
+    <div class="jelly-parse">
+      <div class="jelly-parse-main">
+        <h3>一、名字里的三个层次：厂、制作、编号</h3>
+        <p>「9i果冻制作厂911」并不是一个随意的网名，它天然带着三个可被识别的层次。第一个层次是「果冻制作」——它把内容方向钉死在一个很具体的动作上：制作。这决定了这个品牌不是泛美食账号，而是围绕果冻这一品类持续深耕的垂直内容平台。第二个层次是「厂」，它暗示了标准、工序、批量与质量控制，让观众在点开视频之前就已经预期看到流程、配比、温度与失败复盘的细节。第三个层次是「911」，它像一个系列编号，也像一次紧急呼叫，给这个厂牌增加了记忆点与话题度，让「9i果冻制作厂911」在搜索结果中更容易被一眼认出。</p>
+        <p>在官方网站的内容编排上，我们刻意保留这种「厂牌感」：教程被叫作工序，失败案例被叫作实验记录，创作者被叫作主理人。这不是为了造词，而是让一个以果冻为核心的内容生态拥有自己的语言。对于第一次访问的访客，我们建议先看关键词解析，再进入焦点内容，最后到创作者区认识几位长期更新的主理人，这样能更快理解这个品牌为什么值得反复回访。</p>
+        <h3>二、9i果冻制作厂911 在内容生态中的位置</h3>
+        <p>果冻是一个门槛很低的甜品，但做好果冻的门槛并不低。吉利丁与琼脂的凝固差异、糖水浓度对透明度的影响、水果酸度对凝胶的破坏、脱模温度对边缘完整度的决定作用，这些都是需要被讲清楚的知识点。9i果冻制作厂911 的企业定位，就是把这些容易被短视频一笔带过的细节，用高清、正版、可复现的方式记录下来。我们的原创视频平均时长在 6 到 14 分钟之间，每一条都包含配方表、关键温度、失败对照与成品切面四个固定段落，这让内容具备了工具属性，而不只是观赏属性。</p>
+        <p>作为品牌，我们不追求把果冻做成猎奇造型的流量生意，而是希望建立一套可被检验的品质标准。这也是为什么官方网站把「企业简介」与「关键词解析」放在首屏之后的重要位置：访客需要知道这个平台是谁在运营、内容由谁审核、投稿如何进入精选。我们持续运营的审核机制包括三道流程，分别是配方可复现性检查、画面与音频清晰度检查、版权与素材来源确认。通过审核的内容会进入精品内容池，并有机会出现在首页焦点位。</p>
+        <h3>三、从搜索词到社区：品牌词背后的真实需求</h3>
+        <p>搜索「9i果冻制作厂911」的人，大致有三类。第一类是刚入门的家庭制作者，他们需要一份不会翻车的入门配方，最好能一次性看懂凝固剂用量。第二类是有一定经验的内容创作者，他们关心的是拍摄布光、切面展示与节奏剪辑，希望找到可借鉴的创作方法论。第三类是同好社区里的活跃用户，他们已经在做果冻，来这里是找灵感、找对手、找可以一起参加挑战赛的伙伴。官方网站的模块顺序正是按这三类需求编排：教程与测评解决第一类，创作幕后与企业动态服务第二类，专题企划、创作者矩阵与社区口碑承接第三类。</p>
+        <p>值得一提的是，果冻内容的社区活力并不只体现在点赞数上。在我们的评价区，你会看到有人认真讨论「同一配方在南方潮湿环境下是否需要减少 5% 水分」，也会看到有人分享自己第 7 次才成功的分层经验。这种真实、具体、可被验证的交流，是9i果冻制作厂911 最看重的资产。我们希望官方网站承担的角色，是把这些分散在评论区的经验沉淀成结构化的内容，让下一位搜索这个词的人少走一点弯路。</p>
+        <h3>四、品牌词与长尾词的协同</h3>
+        <p>单靠一个品牌词，很难覆盖果冻手作的全部需求。因此在内容规划上，9i果冻制作厂911 会围绕「果冻制作教程」「果冻脱模技巧」「果冻分层配方」「果冻创意造型」「果冻拍摄布光」等长尾方向持续产出。每一个长尾方向都会对应一个专题企划，专题内再拆分出可独立观看的单集。这样的结构既保证了搜索可见性，也让社区用户有清晰的浏览路径。对品牌而言，这意味着影响力不是靠单条爆款堆出来的，而是靠一条条可复用的内容资产累积出来的。</p>
+        <p>最后需要说明的是，官方网站所有标注「原创」的视频均经过授权确认，转载与二创需遵循页面底部的版权说明。我们相信，一个值得信赖的内容平台，首先要对创作者的权利保持敬畏。这也是9i果冻制作厂911 在行业观察中被反复提及的一点：把厂牌的严谨，用在内容治理上。</p>
+      </div>
+      <aside class="jelly-parse-side">
+        <div class="jelly-side-card">
+          <h3>品牌速览</h3>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23fff8f0'/%3E%3Crect x='36' y='180' width='328' height='70' rx='14' fill='%23f0dfd2'/%3E%3Ccircle cx='120' cy='120' r='56' fill='%23ffb347' opacity='.9'/%3E%3Ccircle cx='120' cy='120' r='34' fill='%23fff3e6'/%3E%3Crect x='210' y='76' width='120' height='120' rx='20' fill='%23ff8fa3' opacity='.75' transform='rotate(8 270 136)'/%3E%3Ccircle cx='330' cy='70' r='18' fill='%2354b6a3'/%3E%3C/svg%3E" alt="品牌速览插图：橙色圆形果冻与粉色方形果冻组合">
+          <p>主理人团队 12 人，内容审核 3 道流程，官网每周更新 2 次。</p>
+          <div class="jelly-side-fact"><span>成立时间</span><b>2019 年</b></div>
+          <div class="jelly-side-fact"><span>内容方向</span><b>果冻手作影像</b></div>
+          <div class="jelly-side-fact"><span>原创占比</span><b>92%</b></div>
+          <div class="jelly-side-fact"><span>社区活跃</span><b>日均 3,100 互动</b></div>
+        </div>
+        <div class="jelly-side-card">
+          <h3>关键词相关方向</h3>
+          <div class="jelly-tags">
+            <span class="jelly-tag">果冻制作教程</span>
+            <span class="jelly-tag jelly-tag-mint">分层配方</span>
+            <span class="jelly-tag jelly-tag-pink">脱模技巧</span>
+            <span class="jelly-tag">创作幕后</span>
+            <span class="jelly-tag jelly-tag-mint">同好挑战</span>
+          </div>
+          <p>这些方向共同构成了9i果冻制作厂911 的内容骨架，也是长尾搜索的主要入口。</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- S3 焦点内容 -->
+<section class="jelly-section jelly-section-alt jelly-anchor" id="jelly-focus">
+  <div class="jelly-wrap">
+    <div class="jelly-section-head">
+      <span class="jelly-eyebrow">Editor's Focus</span>
+      <h2 class="jelly-h2">本期<span class="jelly-hl">焦点内容</span>：一条主线，三条支线</h2>
+      <p class="jelly-section-desc">焦点位由编辑部与社区投票共同决定，本期主线是「分层与脱模」，这也是9i果冻制作厂911 后台搜索量最高的两个问题。</p>
+    </div>
+    <div class="jelly-focus-grid">
+      <article class="jelly-focus-main">
+        <div class="jelly-focus-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='fA' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffb347'/%3E%3Cstop offset='1' stop-color='%23ff6b3d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='%23fff3e6'/%3E%3Crect x='90' y='300' width='620' height='60' rx='30' fill='%23f0dfd2'/%3E%3Crect x='180' y='150' width='180' height='150' rx='16' fill='url(%23fA)' opacity='.9'/%3E%3Crect x='380' y='180' width='180' height='120' rx='16' fill='%23ff8fa3' opacity='.8'/%3E%3Crect x='250' y='90' width='90' height='90' rx='14' fill='%2354b6a3' opacity='.8'/%3E%3Ccircle cx='640' cy='120' r='44' fill='%23ffd08a' opacity='.8'/%3E%3Cpath d='M120 380 q80 -30 160 0 t160 0 t160 0' stroke='%23ff6b3d' stroke-width='3' fill='none' opacity='.4'/%3E%3C/svg%3E" alt="焦点视频封面：双色云朵果冻分层切面与脱模步骤演示">
+          <button class="jelly-play" type="button" data-jelly-modal="play" data-title="双色云朵果冻：零失败分层公式（正片 12:40）">▶</button>
+        </div>
+        <div class="jelly-focus-body">
+          <h3>双色云朵果冻：零失败分层公式（正片 12:40）</h3>
+          <p>从糖水浓度到冷却曲线，完整演示为什么你的分层总是混在一起。视频包含 3 组对照实验：吉利丁比例、注模温度、静置时长，并给出南方潮湿与北方干燥两种环境的修正系数。</p>
+          <div class="jelly-tags">
+            <span class="jelly-tag">分层配方</span>
+            <span class="jelly-tag jelly-tag-mint">对照实验</span>
+            <span class="jelly-tag jelly-tag-pink">脱模技巧</span>
+          </div>
+          <div class="jelly-meta-row">
+            <span>林小满 · 果冻实验室</span>
+            <span>8.9 万播放</span>
+            <span>4,120 收藏</span>
+            <button class="jelly-op" type="button" data-jelly-like>👍 点赞 2,318</button>
+            <button class="jelly-op" type="button" data-jelly-fav>♡ 收藏</button>
+            <button class="jelly-op" type="button" data-jelly-copy data-share-title="双色云朵果冻：零失败分层公式">🔗 复制链接</button>
+          </div>
+        </div>
+      </article>
+      <div class="jelly-focus-list">
+        <article class="jelly-focus-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23e5f6f1'/%3E%3Ccircle cx='110' cy='120' r='64' fill='%2354b6a3' opacity='.85'/%3E%3Ccircle cx='110' cy='120' r='38' fill='%23fff8f0'/%3E%3Crect x='190' y='60' width='90' height='120' rx='16' fill='%23ffb347' opacity='.8'/%3E%3C/svg%3E" alt="琼脂与吉利丁对照实验缩略图：绿色圆形与橙色方形样本">
+          <div>
+            <h3>琼脂 vs 吉利丁：一张表看懂凝固差异</h3>
+            <p>温度、口感、透明度、脱模难度四维对照，附家庭厨房可直接照抄的换算表。</p>
+            <div class="jelly-meta-row"><span>陈砚秋</span><span>5.2 万播放</span><span>3,006 收藏</span></div>
+          </div>
+        </article>
+        <article class="jelly-focus-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23ffe1e6'/%3E%3Cpath d='M40 200 L120 60 L200 200 Z' fill='%23ff8fa3' opacity='.9'/%3E%3Cpath d='M150 200 L220 90 L290 200 Z' fill='%23ffb347' opacity='.75'/%3E%3Ccircle cx='70' cy='70' r='22' fill='%23fff8f0'/%3E%3C/svg%3E" alt="水果酸度与凝胶失败案例缩略图：粉色三角与橙色三角对照">
+          <div>
+            <h3>水果酸度会毁掉你的果冻吗？三次失败复盘</h3>
+            <p>菠萝、猕猴桃、草莓分别入模，用画面告诉你哪一步出了问题。</p>
+            <div class="jelly-meta-row"><span>周慕禾</span><span>4.1 万播放</span><span>1,882 收藏</span></div>
+          </div>
+        </article>
+        <article class="jelly-focus-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23fff8f0'/%3E%3Crect x='50' y='120' width='220' height='70' rx='14' fill='%23f0dfd2'/%3E%3Ccircle cx='120' cy='100' r='40' fill='%23ff6b3d' opacity='.85'/%3E%3Ccircle cx='220' cy='90' r='28' fill='%23ffd08a'/%3E%3C/svg%3E" alt="脱模工具与温杯技巧缩略图：米白背景下橙色圆弧与琥珀圆点">
+          <div>
+            <h3>脱模不破边的 5 个动作细节</h3>
+            <p>温杯时长、刀口角度、倒扣节奏，逐帧拆解慢动作画面。</p>
+            <div class="jelly-meta-row"><span>苏打绿</span><span>6.7 万播放</span><span>3,940 收藏</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S3/M3 热门视频流：单列图文列表 -->
+<section class="jelly-section jelly-anchor" id="jelly-videos">
+  <div class="jelly-wrap">
+    <div class="jelly-section-head">
+      <span class="jelly-eyebrow">Trending Now</span>
+      <h2 class="jelly-h2">热门视频流：<span class="jelly-hl">9i果冻制作厂911</span> 本周播放榜</h2>
+      <p class="jelly-section-desc">榜单按近 7 天播放与收藏综合排序，每一条都可在页面内点赞、收藏与分享，数据实时反映社区热度。</p>
+    </div>
+    <div class="jelly-video-list">
+      <article class="jelly-video-row">
+        <div class="jelly-video-rank">01</div>
+        <div class="jelly-video-main">
+          <h3>用一口锅做星空果冻：家庭厨房版布光与配方</h3>
+          <p>不需要专业设备，用手机补光灯拍出深蓝渐变。视频给出糖水熬制曲线与拍摄布光示意，末尾附带可打印配方卡。</p>
+          <div class="jelly-meta-row">
+            <span>林小满</span>
+            <span class="jelly-tag">星空果冻</span>
+            <span>12.4 万播放</span>
+            <span>6,802 收藏</span>
+            <button class="jelly-op" type="button" data-jelly-like>👍 3,871</button>
+            <button class="jelly-op" type="button" data-jelly-fav>♡ 收藏</button>
+            <button class="jelly-op" type="button" data-jelly-copy data-share-title="用一口锅做星空果冻：家庭厨房版布光与配方">🔗 分享</button>
+          </div>
+        </div>
+        <div class="jelly-video-thumb">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 112'%3E%3Crect width='200' height='112' fill='%233a2418'/%3E%3Ccircle cx='60' cy='50' r='26' fill='%236b8cff' opacity='.7'/%3E%3Ccircle cx='130' cy='70' r='18' fill='%23ffd08a' opacity='.8'/%3E%3Ccircle cx='160' cy='30' r='8' fill='%23fff8f0'/%3E%3C/svg%3E" alt="星空果冻深蓝渐变成品缩略图">
+        </div>
+      </article>
+      <article class="jelly-video-row">
+        <div class="jelly-video-rank">02</div>
+        <div class="jelly-video-main">
+          <h3>桂花蜜冻：把秋天封进一块透明里</h3>
+          <p>应季题材，重点讲花蜜与凝胶的比例平衡，以及如何避免花瓣沉底。适合第一次尝试透明果冻的创作者。</p>
+          <div class="jelly-meta-row">
+            <span>陈砚秋</span>
+            <span class="jelly-tag jelly-tag-mint">应季手作</span>
+            <span>9.8 万播放</span>
+            <span>5,140 收藏</span>
+            <button class="jelly-op" type="button" data-jelly-like>👍 2,905</button>
+            <button class="jelly-op" type="button" data-jelly-fav>♡ 收藏</button>
+            <button class="jelly-op" type="button" data-jelly-copy data-share-title="桂花蜜冻：把秋天封进一块透明里">🔗 分享</button>
+          </div>
+        </div>
+        <div class="jelly-video-thumb">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 112'%3E%3Crect width='200' height='112' fill='%23fff8f0'/%3E%3Crect x='60' y='26' width='80' height='60' rx='10' fill='%23ffd08a' opacity='.8'/%3E%3Ccircle cx='90' cy='50' r='7' fill='%23e0a73d'/%3E%3Ccircle cx='112' cy='62' r='5' fill='%23e0a73d'/%3E%3C/svg%3E" alt="桂花蜜冻透明块与花瓣悬浮缩略图">
+        </div>
+      </article>
+      <article class="jelly-video-row">
+        <div class="jelly-video-rank">03</div>
+        <div class="jelly-video-main">
+          <h3>双色云朵果冻：零失败分层公式</h3>
+          <p>本期焦点正片的 6 分钟精华版，保留全部关键温度与失败对照，适合快速复盘。</p>
+          <div class="jelly-meta-row">
+            <span>林小满</span>
+            <span class="jelly-tag jelly-tag-pink">分层实验</span>
+            <span>8.9 万播放</span>
+            <span>4,120 收藏</span>
+            <button class="jelly-op" type="button" data-jelly-like>👍 2,318</button>
+            <button class="jelly-op" type="button" data-jelly-fav>♡ 收藏</button>
+            <button class="jelly-op" type="button" data-jelly-copy data-share-title="双色云朵果冻：零失败分层公式">🔗 分享</button>
+          </div>
+        </div>
+        <div class="jelly-video-thumb">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 112'%3E%3Crect width='200' height='112' fill='%23fff3e6'/%3E%3Crect x='40' y='60' width='120' height='34' rx='8' fill='%23ffb347'/%3E%3Crect x='40' y='26' width='120' height='34' rx='8' fill='%23ff8fa3' opacity='.8'/%3E%3C/svg%3E" alt="双色云朵果冻上下分层切面缩略图">
+        </div>
+      </article>
+      <article class="jelly-video-row">
+        <div class="jelly-video-rank">04</div>
+        <div class="jelly-video-main">
+          <h3>给果冻拍杂志封面：背景纸、反光板与一支手机</h3>
+          <p>创作幕后向内容，讲解如何用最低成本搭出干净背景，并保持果冻表面不出现杂乱倒影。</p>
+          <div class="jelly-meta-row">
+            <span>苏打绿</span>
+            <span class="jelly-tag">创作幕后</span>
+            <span>7.3 万播放</span>
+            <span>3,960 收藏</span>
+            <button class="jelly-op" type="button" data-jelly-like>👍 2,102</button>
+            <button class="jelly-op" type="button" data-jelly-fav>♡ 收藏</button>
+            <button class="jelly-op" type="button" data-jelly-copy data-share-title="给果冻拍杂志封面：背景纸、反光板与一支手机">🔗 分享</button>
+          </div>
+        </div>
+      </article>
+      <article class="jelly-video-row">
+        <div class="jelly-video-rank">05</div>
+        <div class="jelly-video-main">
+          <h3>家庭厨房的凝固剂选购清单：从成分表开始</h3>
+          <p>行业观察题材，教你读懂包装上的凝胶强度与复配说明，避免买到不适合分层制作的产品。</p>
+          <div class="jelly-meta-row">
+            <span>周慕禾</span>
+            <span class="jelly-tag jelly-tag-mint">选购攻略</span>
+            <span>6.1 万播放</span>
+            <span>2,874 收藏</span>
+            <button class="jelly-op" type="button" data-jelly-like>👍 1,740</button>
+            <button class="jelly-op" type="button" data-jelly-fav>♡ 收藏</button>
+            <button class="jelly-op" type="button" data-jelly-copy data-share-title="家庭厨房的凝固剂选购清单：从成分表开始">🔗 分享</button>
+          </div>
+        </div>
+      </article>
+      <article class="jelly-video-row">
+        <div class="jelly-video-rank">06</div>
+        <div class="jelly-video-main">
+          <h3>亲子果冻课：和孩子一起做一杯彩虹</h3>
+          <p>情感故事与亲子成长方向，包含安全提示、可食用色素用量与让孩子参与的三个小任务设计。</p>
+          <div class="jelly-meta-row">
+            <span>何知夏</span>
+            <span class="jelly-tag jelly-tag-pink">亲子成长</span>
+            <span>5.6 万播放</span>
+            <span>2,410 收藏</span>
+            <button class="jelly-op" type="button" data-jelly-like>👍 1,563</button>
+            <button class="jelly-op" type="button" data-jelly-fav>♡ 收藏</button>
+            <button class="jelly-op" type="button" data-jelly-copy data-share-title="亲子果冻课：和孩子一起做一杯彩虹">🔗 分享</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S4 专题企划 -->
+<section class="jelly-section jelly-section-alt jelly-anchor" id="jelly-topics">
+  <div class="jelly-wrap">
+    <div class="jelly-section-head">
+      <span class="jelly-eyebrow">Series &amp; Programs</span>
+      <h2 class="jelly-h2">专题企划：<span class="jelly-hl">9i果冻制作厂911</span> 的长期栏目</h2>
+      <p class="jelly-section-desc">专题是品牌内容生态的骨架。每个专题至少更新 3 集，并在专题页内提供完整目录与创作思路，方便系统学习。</p>
+    </div>
+    <div class="jelly-topic-grid">
+      <article class="jelly-topic">
+        <div class="jelly-topic-top">
+          <span class="jelly-tag">冬季限定</span>
+          <span class="jelly-topic-status jelly-st-ongoing">更新中</span>
+        </div>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%23fff3e6'/%3E%3Ccircle cx='90' cy='100' r='46' fill='%23ffb347' opacity='.8'/%3E%3Ccircle cx='200' cy='100' r='46' fill='%23ff8fa3' opacity='.7'/%3E%3Ccircle cx='310' cy='100' r='46' fill='%2354b6a3' opacity='.7'/%3E%3Crect x='60' y='160' width='280' height='12' rx='6' fill='%23f0dfd2'/%3E%3C/svg%3E" alt="冬季限定果冻专题封面：橙粉绿三色圆形果冻并列">
+        <h3>果冻实验室·冬季限定</h3>
+        <p>从热红酒冻到姜汁奶冻，用 8 集内容探索适合低温季节的风味与口感。</p>
+        <ul>
+          <li>第 12 集：热红酒风味果冻的酒精处理</li>
+          <li>第 13 集：姜汁奶冻的双层防渗色</li>
+          <li>第 14 集：双色云朵果冻全流程</li>
+        </ul>
+        <div class="jelly-topic-foot">已更新 14 集 · 约 21.6 万播放</div>
+      </article>
+      <article class="jelly-topic">
+        <div class="jelly-topic-top">
+          <span class="jelly-tag jelly-tag-mint">技术向</span>
+          <span class="jelly-topic-status jelly-st-done">已完结</span>
+        </div>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%23e5f6f1'/%3E%3Crect x='50' y='120' width='300' height='40' rx='10' fill='%2354b6a3' opacity='.55'/%3E%3Ccircle cx='120' cy='80' r='30' fill='%2354b6a3'/%3E%3Crect x='200' y='50' width='60' height='60' rx='8' fill='%23ffd08a'/%3E%3Cpath d='M290 50 L330 110 L250 110 Z' fill='%23ff8fa3' opacity='.8'/%3E%3C/svg%3E" alt="凝固剂技术专题封面：绿色圆形、琥珀方块与粉色三角对照">
+        <h3>凝固剂使用手册</h3>
+        <p>把琼脂、吉利丁、卡拉胶的差异讲透，是新手最值得从头看到尾的专题。</p>
+        <ul>
+          <li>第 1 集：凝胶强度到底是什么单位</li>
+          <li>第 2 集：复配比例与口感对照实验</li>
+          <li>第 3 集：常见失败现象与修正方案</li>
+        </ul>
+        <div class="jelly-topic-foot">共 6 集 · 18.2 万播放 · 口碑 4.9</div>
+      </article>
+      <article class="jelly-topic">
+        <div class="jelly-topic-top">
+          <span class="jelly-tag jelly-tag-pink">社区共创</span>
+          <span class="jelly-topic-status jelly-st-soon">报名中</span>
+        </div>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%23ffe1e6'/%3E%3Cpath d='M40 170 L120 40 L200 170 Z' fill='%23ff8fa3' opacity='.85'/%3E%3Cpath d='M170 170 L250 70 L330 170 Z' fill='%23ffb347' opacity='.75'/%3E%3Ccircle cx='340' cy='50' r='22' fill='%23fff8f0'/%3E%3C/svg%3E" alt="社区共创挑战专题封面：粉色与橙色三角构成的山形图案">
+        <h3>冬日果冻创意挑战</h3>
+        <p>面向全社区征集创意果冻作品，主题只有一个：把冬天做进果冻里。</p>
+        <ul>
+          <li>投稿截止：2026 年 12 月 20 日</li>
+          <li>评审维度：创意、可复现性、影像品质</li>
+          <li>入选作品将在官网焦点位展映</li>
+        </ul>
+        <div class="jelly-topic-foot">已有 218 位创作者报名 · 官方投票通道开启</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S5 创作者矩阵（访谈摘录式） -->
+<section class="jelly-section jelly-anchor" id="jelly-authors">
+  <div class="jelly-wrap">
+    <div class="jelly-section-head">
+      <span class="jelly-eyebrow">Creators</span>
+      <h2 class="jelly-h2">创作者矩阵：<span class="jelly-hl">9i果冻制作厂911</span> 的长期共建者</h2>
+      <p class="jelly-section-desc">他们不是签约明星，而是持续上传、持续复盘、持续回答评论区提问的真实创作者。以下摘录来自官网编辑部访谈。</p>
+    </div>
+    <div class="jelly-author-grid">
+      <article class="jelly-author">
+        <div class="jelly-avatar jelly-av-1">满</div>
+        <div>
+          <h3>林小满</h3>
+          <div class="jelly-author-role">分层配方 · 品牌主理人</div>
+          <div class="jelly-author-stat">作品 214 · 粉丝 48.6 万</div>
+          <p>擅长把复杂的凝固原理拆成可照抄的步骤，视频节奏稳、信息密度高。长期负责9i果冻制作厂911 的焦点内容与专题策划，是社区里被引用次数最多的作者。</p>
+          <p class="jelly-author-quote">「我拍视频只有一个标准：观众暂停后能照着做成功。」</p>
+        </div>
+      </article>
+      <article class="jelly-author">
+        <div class="jelly-avatar jelly-av-2">砚</div>
+        <div>
+          <h3>陈砚秋</h3>
+          <div class="jelly-author-role">材质测评 · 实验派</div>
+          <div class="jelly-author-stat">作品 168 · 粉丝 31.2 万</div>
+          <p>偏好用对照实验说话，同一个配方会做三组变量。她的凝固剂手册专题被多家甜品工作室作为内部培训资料，评论区常见「按这个表做终于成功了」的反馈。</p>
+          <p class="jelly-author-quote">「失败不是废片，失败是最好的对照组。」</p>
+        </div>
+      </article>
+      <article class="jelly-author">
+        <div class="jelly-avatar jelly-av-3">禾</div>
+        <div>
+          <h3>周慕禾</h3>
+          <div class="jelly-author-role">选购攻略 · 行业观察</div>
+          <div class="jelly-author-stat">作品 132 · 粉丝 22.8 万</div>
+          <p>专注家庭厨房场景的实用内容，擅长把包装上的专业参数翻译成普通人能懂的话。她的选购清单每季度更新，被视为入门者的第一份必读材料。</p>
+          <p class="jelly-author-quote">「先看懂成分表，再谈创意造型。」</p>
+        </div>
+      </article>
+      <article class="jelly-author">
+        <div class="jelly-avatar jelly-av-4">绿</div>
+        <div>
+          <h3>苏打绿</h3>
+          <div class="jelly-author-role">创作幕后 · 影像美学</div>
+          <div class="jelly-author-stat">作品 97 · 粉丝 19.5 万</div>
+          <p>从布光、背景纸到镜头运动，他把果冻拍摄做成了一门可学习的课。许多社区新人第一次被推荐，就是因为看了他讲「如何让果冻不反光」的那一期。</p>
+          <p class="jelly-author-quote">「好的画面不是设备决定的，是耐心决定的。」</p>
+        </div>
+      </article>
+      <article class="jelly-author">
+        <div class="jelly-avatar jelly-av-5">夏</div>
+        <div>
+          <h3>何知夏</h3>
+          <div class="jelly-author-role">亲子成长 · 治愈影像</div>
+          <div class="jelly-author-stat">作品 86 · 粉丝 16.3 万</div>
+          <p>把果冻制作变成亲子共同完成的小项目，视频里保留了孩子失败的片段与重来的过程。她说，比成品更重要的是让孩子知道「可以再做一次」。</p>
+          <p class="jelly-author-quote">「我们记录的不是甜品，是一起做甜品的时间。」</p>
+        </div>
+      </article>
+      <article class="jelly-author">
+        <div class="jelly-avatar jelly-av-6">澄</div>
+        <div>
+          <h3>许澄</h3>
+          <div class="jelly-author-role">创意造型 · 艺术美学</div>
+          <div class="jelly-author-stat">作品 74 · 粉丝 14.1 万</div>
+          <p>擅长把果冻做成可食用的装置艺术，作品常被用于品牌联名与线下展陈。她坚持所有造型都可复现，并在视频末尾附上手绘结构图。</p>
+          <p class="jelly-author-quote">「造型可以大胆，结构必须诚实。」</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S6 用户评价（双列短评） -->
+<section class="jelly-section jelly-section-alt jelly-anchor" id="jelly-comments">
+  <div class="jelly-wrap">
+    <div class="jelly-section-head">
+      <span class="jelly-eyebrow">Community Voice</span>
+      <h2 class="jelly-h2">社区口碑：他们这样评价<span class="jelly-hl">9i果冻制作厂911</span></h2>
+      <p class="jelly-section-desc">评价来自官网注册用户与专题参与者，涵盖学习效果、内容品质与社区氛围三个维度。</p>
+    </div>
+    <div class="jelly-comment-grid">
+      <article class="jelly-comment">
+        <div class="jelly-comment-head">
+          <span class="jelly-comment-av jelly-av-2">阿</span>
+          <span class="jelly-comment-name">阿柚不加糖</span>
+          <span class="jelly-stars">★★★★★</span>
+          <span class="jelly-comment-time">11 月 19 日</span>
+        </div>
+        <p>按照分层公式做了三次，前两次因为注模温度太高混在一起，第三次终于成功。视频里把失败原因讲得很清楚，这种不藏错的做法很难得。</p>
+        <span class="jelly-comment-tag">学习效果</span>
+      </article>
+      <article class="jelly-comment">
+        <div class="jelly-comment-head">
+          <span class="jelly-comment-av jelly-av-1">布</span>
+          <span class="jelly-comment-name">布丁研究所</span>
+          <span class="jelly-stars">★★★★★</span>
+          <span class="jelly-comment-time">11 月 17 日</span>
+        </div>
+        <p>作为同行，我比较关注画面质感。这里的果冻切面拍得很干净，没有过度打光，高清画质在电脑上看也不糊，专业度在线。</p>
+        <span class="jelly-comment-tag">内容品质</span>
+      </article>
+      <article class="jelly-comment">
+        <div class="jelly-comment-head">
+          <span class="jelly-comment-av jelly-av-3">南</span>
+          <span class="jelly-comment-name">南方的梅雨季</span>
+          <span class="jelly-stars">★★★★☆</span>
+          <span class="jelly-comment-time">11 月 15 日</span>
+        </div>
+        <p>南方人表示潮湿环境那一段太有用了。唯一的小建议是希望配方卡能再做大一点，手机暂停截图的时候字有点小。</p>
+        <span class="jelly-comment-tag">实用建议</span>
+      </article>
+      <article class="jelly-comment">
+        <div class="jelly-comment-head">
+          <span class="jelly-comment-av jelly-av-4">果</span>
+          <span class="jelly-comment-name">果冻星球来信</span>
+          <span class="jelly-stars">★★★★★</span>
+          <span class="jelly-comment-time">11 月 14 日</span>
+        </div>
+        <p>在挑战赛里投了作品，收到编辑的修改建议，不是模板回复，而是具体指出我第 42 秒的脱模动作会让边缘破损。这种反馈在别处很难遇到。</p>
+        <span class="jelly-comment-tag">社区氛围</span>
+      </article>
+      <article class="jelly-comment">
+        <div class="jelly-comment-head">
+          <span class="jelly-comment-av jelly-av-5">小</span>
+          <span class="jelly-comment-name">小满的邻居</span>
+          <span class="jelly-stars">★★★★★</span>
+          <span class="jelly-comment-time">11 月 12 日</span>
+        </div>
+        <p>带孩子看了亲子果冻课，她第一次自己完成了一杯彩虹。视频里保留孩子失败重来的片段，我女儿看完说「原来大人也会做坏」。</p>
+        <span class="jelly-comment-tag">情感共鸣</span>
+      </article>
+      <article class="jelly-comment">
+        <div class="jelly-comment-head">
+          <span class="jelly-comment-av jelly-av-6">摄</span>
+          <span class="jelly-comment-name">摄影棚的猫</span>
+          <span class="jelly-stars">★★★★☆</span>
+          <span class="jelly-comment-time">11 月 10 日</span>
+        </div>
+        <p>创作幕后那一期帮我解决了反光问题。如果后续能加一节讲冷色调背景怎么选，就更完整了。整体内容更新频率稳定，值得长期关注。</p>
+        <span class="jelly-comment-tag">创作方法</span>
+      </article>
+      <article class="jelly-comment">
+        <div class="jelly-comment-head">
+          <span class="jelly-comment-av jelly-av-1">甜</span>
+          <span class="jelly-comment-name">甜度七分</span>
+          <span class="jelly-stars">★★★★★</span>
+          <span class="jelly-comment-time">11 月 8 日</span>
+        </div>
+        <p>专题结构做得好，从凝固剂手册一路看到分层实验，形成完整知识链。不像刷短视频那样看完就忘，这个官网更像一本可以反复翻的教材。</p>
+        <span class="jelly-comment-tag">内容体系</span>
+      </article>
+      <article class="jelly-comment">
+        <div class="jelly-comment-head">
+          <span class="jelly-comment-av jelly-av-2">七</span>
+          <span class="jelly-comment-name">七楼的厨房</span>
+          <span class="jelly-stars">★★★★☆</span>
+          <span class="jelly-comment-time">11 月 6 日</span>
+        </div>
+        <p>投稿流程清晰，审核大概三天出结果。希望以后能开放配方比例的自定义说明，方便不同城市的人按湿度调整。</p>
+        <span class="jelly-comment-tag">投稿体验</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S7 企业动态 + FAQ -->
+<section class="jelly-section jelly-anchor" id="jelly-news">
+  <div class="jelly-wrap">
+    <div class="jelly-two-col">
+      <div>
+        <div class="jelly-section-head">
+          <span class="jelly-eyebrow">Newsroom</span>
+          <h2 class="jelly-h2">企业动态与<span class="jelly-hl">官方发布</span></h2>
+          <p class="jelly-section-desc">关于9i果冻制作厂911 的内容更新、合作与社区活动，均在此同步。</p>
+        </div>
+        <div class="jelly-news">
+          <article class="jelly-news-item">
+            <span class="jelly-news-date">11-20</span>
+            <div>
+              <h3>「冬季限定」第 14 集上线，同步开放挑战赛报名</h3>
+              <p>双色云朵果冻全流程公开，附南方与北方两套修正系数；挑战赛报名通道已开放。</p>
+            </div>
+          </article>
+          <article class="jelly-news-item">
+            <span class="jelly-news-date">11-15</span>
+            <div>
+              <h3>官网新增「创作者名录」筛选与作品直达入口</h3>
+              <p>可按擅长领域查看创作者，并直接跳转其代表作；移动端同步优化加载速度。</p>
+            </div>
+          </article>
+          <article class="jelly-news-item">
+            <span class="jelly-news-date">11-08</span>
+            <div>
+              <h3>与三家手作工作室达成内容合作</h3>
+              <p>联合推出线下果冻工作坊，官网注册用户可优先报名，名额按月释放。</p>
+            </div>
+          </article>
+          <article class="jelly-news-item">
+            <span class="jelly-news-date">10-30</span>
+            <div>
+              <h3>凝固剂使用手册专题完结，累计 18.2 万播放</h3>
+              <p>专题页新增可下载配方表与失败对照图，持续为社区提供可复用资料。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div id="jelly-faq" class="jelly-faq jelly-anchor">
+        <div class="jelly-section-head">
+          <span class="jelly-eyebrow">Help Center</span>
+          <h2 class="jelly-h2">常见问题与<span class="jelly-hl">帮助中心</span></h2>
+          <p class="jelly-section-desc">关于观看、投稿与版权，遇到问题先看这里。</p>
+        </div>
+        <details open>
+          <summary>官网视频可以转载或二次创作吗？</summary>
+          <p>标注「原创」的视频版权归作者与9i果冻制作厂911 共有。个人学习与分享请保留出处；商业用途与二次创作需通过页面底部邮箱提交申请，审核周期约 5 个工作日。</p>
+        </details>
+        <details>
+          <summary>投稿后多久能收到审核结果？</summary>
+          <p>常规审核为 3 个工作日，专题征稿期间可能延长至 7 天。结果会通过站内信与投稿邮箱同步通知，未通过的作品会附上具体修改建议。</p>
+        </details>
+        <details>
+          <summary>为什么我的分层果冻总是混在一起？</summary>
+          <p>最常见的原因是第二层注入温度过高。建议将糖水冷却至 35℃ 以下再注入，并沿杯壁缓慢倒入。也可以先冷藏第一层 20 分钟，让表面形成稳定凝胶膜。</p>
+        </details>
+        <details>
+          <summary>琼脂和吉利丁可以互相替换吗？</summary>
+          <p>不能按 1:1 替换。琼脂需要加热至 95℃ 以上才充分溶解，成品脆硬；吉利丁在 40℃ 左右即可溶解，成品柔软。替换时需同步调整用量与冷却方式，建议参考凝固剂手册专题。</p>
+        </details>
+        <details>
+          <summary>如何参加冬日果冻创意挑战？</summary>
+          <p>注册官网账号后，从「专题企划」进入挑战页提交作品链接与配方说明即可。每位创作者最多提交 3 件作品，入选作品将在官网焦点位展映。</p>
+        </details>
+        <details>
+          <summary>页面上的播放与收藏数据是实时的吗？</summary>
+          <p>点赞与收藏按钮为页面内交互演示，点击后会即时更新状态；排行榜数据按运营周期更新，具体以页面展示为准。</p>
+        </details>
+      </div>
+    </div>
+    <div class="jelly-partner-row">
+      <div class="jelly-partner">云朵甜品工作室<span>内容共创伙伴</span></div>
+      <div class="jelly-partner">南岸手作<span>线下工作坊合作</span></div>
+      <div class="jelly-partner">澄光影像<span>影像技术支持</span></div>
+      <div class="jelly-partner">果知社<span>行业观察联合出品</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 投稿入口 CTA -->
+<section class="jelly-section" style="padding-top:0">
+  <div class="jelly-wrap">
+    <div class="jelly-cta">
+      <div>
+        <h2>把你的果冻作品，放进官方的镜头里</h2>
+        <p>9i果冻制作厂911 长期开放投稿：配方、幕后、失败复盘都可以。通过审核的内容会进入精品内容池，并有机会参与专题企划与社区挑战赛。</p>
+      </div>
+      <div class="jelly-cta-actions">
+        <button class="jelly-btn jelly-btn-primary" type="button" id="jellyCtaSubmit">我要投稿</button>
+        <button class="jelly-btn jelly-btn-ghost" type="button" id="jellyCtaFeedback">意见反馈</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S8 页脚 -->
+<footer class="jelly-footer">
+  <div class="jelly-wrap">
+    <div class="jelly-footer-grid">
+      <div>
+        <div class="jelly-footer-brand">9i果冻制作厂911</div>
+        <p>9i果冻制作厂911 官方网站 | 版权所有 | 持续运营中。我们专注果冻手作影像内容，以原创、正版、高清为标准，搭建值得信赖的内容生态。</p>
+        <p>品牌理念：真实记录，认真制作，让每一份果冻都有据可循。</p>
+      </div>
+      <div>
+        <h3>内容导航</h3>
+        <a href="#jelly-focus">焦点内容</a>
+        <a href="#jelly-videos">热门视频</a>
+        <a href="#jelly-topics">专题企划</a>
+        <a href="#jelly-authors">创作者名录</a>
+      </div>
+      <div>
+        <h3>社区与帮助</h3>
+        <a href="#jelly-comments">社区口碑</a>
+        <a href="#jelly-news">企业动态</a>
+        <a href="#jelly-faq">帮助中心</a>
+        <a href="#jelly-hero">回到首页</a>
+      </div>
+      <div>
+        <h3>合作与联系</h3>
+        <p>内容合作：studio@9ijelly.example</p>
+        <p>投稿咨询：submit@9ijelly.example</p>
+        <p>工作时间：周一至周五 10:00–18:00</p>
+      </div>
+    </div>
+    <div class="jelly-footer-bottom">
+      <span>© 2019–2026 9i果冻制作厂911 官方网站 · 保留所有权利</span>
+      <span>内容备案号：JELLY-2026-0911 · 持续运营中</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 弹窗 -->
+<div class="jelly-modal-backdrop" id="jellyModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="jellyModalTitle">
+  <div class="jelly-modal">
+    <h3 id="jellyModalTitle">标题</h3>
+    <p id="jellyModalDesc">说明文字</p>
+    <div id="jellyModalBody"></div>
+    <div class="jelly-modal-actions">
+      <button class="jelly-btn jelly-btn-plain" type="button" id="jellyModalCancel">取消</button>
+      <button class="jelly-btn jelly-btn-primary" type="button" id="jellyModalConfirm">提交</button>
+    </div>
+  </div>
+</div>
+
+<div class="jelly-toast" id="jellyToast">已复制</div>
+<button class="jelly-backtop" id="jellyBackTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var doc = document;
+  function $(sel){ return doc.querySelector(sel); }
+  function $all(sel){ return Array.prototype.slice.call(doc.querySelectorAll(sel)); }
+
+  /* Toast */
+  var toastEl = $('#jellyToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2000);
+  }
+
+  /* 移动端导航 */
+  var navToggle = $('#jellyNavToggle');
+  var mobileNav = $('#jellyMobileNav');
+  navToggle.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    navToggle.textContent = open ? '✕' : '☰';
+  });
+  $all('#jellyMobileNav a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mobileNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded','false');
+      navToggle.textContent = '☰';
+    });
+  });
+
+  /* 搜索反馈 */
+  var searchInput = $('#jellySearchInput');
+  var searchBtn = $('#jellySearchBtn');
+  var searchFeedback = $('#jellySearchFeedback');
+  var searchIndex = [
+    {k:'分层', t:'双色云朵果冻：零失败分层公式', a:'#jelly-focus'},
+    {k:'脱模', t:'脱模不破边的 5 个动作细节', a:'#jelly-focus'},
+    {k:'琼脂', t:'琼脂 vs 吉利丁：一张表看懂凝固差异', a:'#jelly-focus'},
+    {k:'桂花', t:'桂花蜜冻：把秋天封进一块透明里', a:'#jelly-videos'},
+    {k:'星空', t:'用一口锅做星空果冻：家庭厨房版布光与配方', a:'#jelly-videos'},
+    {k:'亲子', t:'亲子果冻课：和孩子一起做一杯彩虹', a:'#jelly-videos'},
+    {k:'投稿', t:'投稿入口与审核说明', a:'#jelly-news'},
+    {k:'凝固剂', t:'凝固剂使用手册专题', a:'#jelly-topics'}
+  ];
+  function doSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchFeedback.textContent = '请输入关键词，例如「分层」「脱模」「琼脂」。';
+      searchFeedback.classList.add('show');
+      return;
+    }
+    var hit = searchIndex.filter(function(item){ return item.k.indexOf(q) > -1 || item.t.indexOf(q) > -1; });
+    if(hit.length){
+      var first = hit[0];
+      searchFeedback.innerHTML = '找到 ' + hit.length + ' 条相关内容，最相关：<a href="' + first.a + '" style="color:#a24b2a;font-weight:700;text-decoration:underline">' + first.t + '</a>';
+      searchFeedback.classList.add('show');
+    }else{
+      searchFeedback.textContent = '暂未找到「' + q + '」相关内容，可尝试「分层」「脱模」「凝固剂」等关键词。';
+      searchFeedback.classList.add('show');
+    }
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); doSearch(); } });
+
+  /* 点赞 */
+  $all('[data-jelly-like]').forEach(function(btn){
+    var raw = btn.textContent.replace(/[^\d,]/g,'').replace(/,/g,'');
+    var base = raw ? parseInt(raw,10) : 0;
+    var on = false;
+    btn.addEventListener('click', function(){
+      on = !on;
+      var n = on ? base + 1 : base;
+      btn.textContent = '👍 ' + (on ? n.toLocaleString('en-US') : base.toLocaleString('en-US'));
+      btn.classList.toggle('jelly-op-on', on);
+      if(on) showToast('已点赞，感谢支持原创内容');
+    });
+  });
+
+  /* 收藏 */
+  $all('[data-jelly-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('jelly-op-on');
+      btn.textContent = on ? '♥ 已收藏' : '♡ 收藏';
+      showToast(on ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+    });
+  });
+
+  /* 复制链接 */
+  $all('[data-jelly-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var title = btn.getAttribute('data-share-title') || '9i果冻制作厂911';
+      var text = title + ' · 9i果冻制作厂911 官方网站';
+      function done(){ showToast('已复制：' + title); }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done).catch(function(){
+          fallbackCopy(text); done();
+        });
+      }else{
+        fallbackCopy(text); done();
+      }
+    });
+  });
+  function fallbackCopy(text){
+    try{
+      var ta = doc.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      doc.body.appendChild(ta);
+      ta.select();
+      doc.execCommand('copy');
+      doc.body.removeChild(ta);
+    }catch(e){}
+  }
+
+  /* 弹窗 */
+  var backdrop = $('#jellyModalBackdrop');
+  var modalTitle = $('#jellyModalTitle');
+  var modalDesc = $('#jellyModalDesc');
+  var modalBody = $('#jellyModalBody');
+  var modalConfirm = $('#jellyModalConfirm');
+  var modalCancel = $('#jellyModalCancel');
+  var modalMode = 'submit';
+
+  function openModal(mode){
+    modalMode = mode;
+    if(mode === 'play'){
+      modalTitle.textContent = '播放提示';
+      modalDesc.textContent = '当前为演示页面，正片播放能力需接入正式视频服务。以下为选集与章节信息。';
+      modalBody.innerHTML = '<p style="font-size:13.5px;color:#4c3425;margin:0">01 配方与凝固剂选择（0:00）<br>02 糖水浓度与冷却曲线（2:10）<br>03 分层注模的温度控制（5:40）<br>04 脱模与切面展示（9:20）<br>05 失败对照与修正（11:05）</p>';
+      modalConfirm.textContent = '知道了';
+      modalConfirm.style.display = '';
+      modalCancel.style.display = 'none';
+    }else if(mode === 'feedback'){
+      modalTitle.textContent = '意见反馈';
+      modalDesc.textContent = '请描述你遇到的问题或建议，我们会认真阅读每一条反馈。';
+      modalBody.innerHTML = '<label for="jellyFbText">反馈内容</label><textarea id="jellyFbText" rows="4" placeholder="例如：希望配方卡字号更大……"></textarea>';
+      modalConfirm.textContent = '提交反馈';
+      modalConfirm.style.display = '';
+      modalCancel.style.display = '';
+    }else{
+      modalTitle.textContent = '作品投稿';
+      modalDesc.textContent = '请填写作品信息。9i果冻制作厂911 官方审核为 3 个工作日，通过后会收到站内通知。';
+      modalBody.innerHTML = '<label for="jellySubName">作品名称</label><input id="jellySubName" type="text" placeholder="例如：冬日姜汁奶冻"><label for="jellySubContact">联系方式</label><input id="jellySubContact" type="text" placeholder="邮箱或手机号"><label for="jellySubDesc">作品说明</label><textarea id="jellySubDesc" rows="3" placeholder="配方要点、拍摄思路或创作故事"></textarea>';
+      modalConfirm.textContent = '提交作品';
+      modalConfirm.style.display = '';
+      modalCancel.style.display = '';
+    }
+    backdrop.classList.add('show');
+  }
+  function closeModal(){
+    backdrop.classList.remove('show');
+  }
+  modalCancel.addEventListener('click', closeModal);
+  modalConfirm.addEventListener('click', function(){
+    if(modalMode === 'play'){
+      closeModal();
+      return;
+    }
+    if(modalMode === 'feedback'){
+      var fb = $('#jellyFbText');
+      if(fb && fb.value.trim().length < 4){
+        showToast('请至少填写 4 个字');
+        return;
+      }
+      closeModal();
+      showToast('反馈已提交，感谢你的建议');
+      return;
+    }
+    var name = $('#jellySubName');
+    if(name && name.value.trim().length < 2){
+      showToast('请填写作品名称');
+      return;
+    }
+    closeModal();
+    showToast('投稿已提交，等待官方审核');
+  });
+  backdrop.addEventListener('click', function(e){ if(e.target === backdrop) closeModal(); });
+  doc.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  /* 打开各类弹窗 */
+  $all('[data-jelly-modal="play"]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal('play'); });
+  });
+  var heroSubmit = $('#jellyHeroSubmit');
+  if(heroSubmit) heroSubmit.addEventListener('click', function(){ openModal('submit'); });
+  var ctaSubmit = $('#jellyCtaSubmit');
+  if(ctaSubmit) ctaSubmit.addEventListener('click', function(){ openModal('submit'); });
+  var ctaFeedback = $('#jellyCtaFeedback');
+  if(ctaFeedback) ctaFeedback.addEventListener('click', function(){ openModal('feedback'); });
+
+  /* 回到顶部 */
+  var backTop = $('#jellyBackTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 600){ backTop.classList.add('show'); }
+    else{ backTop.classList.remove('show'); }
+  }, {passive:true});
+  backTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+              </html>
